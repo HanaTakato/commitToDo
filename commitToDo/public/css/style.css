@@ -1,0 +1,978 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0 auto;
+    height: 720px;
+    width: 100%;
+    
+    position: relative;
+}
+#nav{
+    margin-top: 0;
+}
+
+/* headerのスタイル */
+header{
+    width: 100%;
+    height: 3rem;
+    background-color: tomato;
+}
+.g_nav1{
+    font-weight: bold;
+    background-color: tomato;
+    width: 100%;
+    height: 3rem;
+}
+.g_nav1 a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin-left: 1rem;
+}
+.g_nav2{
+    font-weight: bold;
+    background-color: tomato;
+    width: 100%;
+    height: 3rem;
+}
+.g_nav2 ul {
+    display: flex;
+    list-style: none;
+}
+.g_nav2 a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+}
+.right_nav{
+    width: 90%;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 1rem;
+}
+
+/* トップページのスタイル */
+.index_main{
+    position: absolute;
+    margin-top: 10rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.index_text h1{
+    padding-bottom: 5rem;
+    
+}
+.index_text p {
+    padding-bottom: 5rem;
+    
+}
+
+.index_text button{
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 8rem;
+    height: 3rem;
+    
+    
+}
+
+.indexImg_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.index_img{
+    text-align: center;
+    position: absolute;
+    right: -16rem;
+    top: 16rem;
+    z-index: 0;
+}
+.index_img img{
+    width: 55%;
+    height: 55%;
+    
+}
+
+/* サインイン画面のスタイル */
+.signIn_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+.signIn_main{
+    z-index: 4;
+    position: absolute;
+    top: 3rem;
+    left: 40%;
+    
+
+}
+.signIn_main h1{
+    margin-bottom: 5rem;
+
+}
+.signIn_main h1 ,form , p {
+    text-align: center;
+}
+.signIn_main form input{
+    margin-bottom: 1rem;
+}
+.signIn_main p a{
+    color: blue;
+}
+#signIn_userName{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+#signIn_userName::placeholder{
+    color:  rgba(128, 128, 128, 0.4);
+}
+#signIn_password{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+#signIn_password::placeholder{
+    color:  rgba(128, 128, 128, 0.4);
+}
+
+#submit{
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    margin-bottom: 7rem;
+}
+.signIn_img{
+    position: absolute;
+    z-index: 2;
+    top: 18rem;
+    left: 8rem;
+
+}
+
+.signIn_img img{
+    width: 50%;
+    height: 50%;
+}
+
+/* ユーザー名は覚えてるかな？のスタイル */
+.type{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+.type_text{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+.type_text h1{
+    margin-bottom: 7rem;
+}
+#chuser h1{
+    margin-bottom: 4rem;
+}
+#chuserP{
+    color: rgba(128, 128, 128, 0.8);
+}
+.textbox{
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+}
+.textbox::placeholder{
+    color:  rgba(128, 128, 128, 0.4);
+}
+.submit{
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1rem;
+    width: 8rem;
+    height: 3rem;
+    margin-bottom: 7rem;
+}
+.left_img{
+    position: absolute;
+    z-index: 2;
+    top: 15rem;
+    left: 8rem;
+}
+.left_img img{
+    width: 40%;
+    height: 40%;
+}
+.right_img{
+    position: absolute;
+    z-index: 2;
+    top: 15rem;
+    right: -30rem;
+}
+.right_img img{
+    width: 40%;
+    height: 40%;
+    
+}
+.finPass_img{
+    position: absolute;
+    z-index: 2;
+    top: 10rem;
+    right: -20rem;
+}
+.finPass_img img{
+    width: 40%;
+    height: 40%;
+}
+.fin_wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#finPassButton{
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 20px;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 3rem;
+    margin-bottom: 7rem;
+}
+#finPassButton span{
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+}
+#chPa_img{
+    position: absolute;
+    z-index: 2;
+    top: 15rem;
+    right: -40rem;
+}
+#new_img{
+    position: absolute;
+    z-index: 2;
+    top: 20rem;
+    left: 5rem;
+
+}
+#new_img img{
+    width: 50%;
+    height: 50%;
+}
+.regiP{
+    color: rgba(128, 128, 128, 0.8);
+}
+
+
+/* タスク管理ページのデザイン */
+#wrap_contents{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+#taskbody{
+    height: 830px;
+
+}
+/* 左側のスタイル */
+#left_contents{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+.task_goals{
+    position: relative;
+}
+#task_goal{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    width: 15rem;
+    padding:1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    overflow: scroll;
+
+}
+#task_goal p{
+    color: tomato;
+
+}
+#task_reason1{
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    width: 12rem;
+    padding:1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    overflow: scroll;
+}
+#task_reason1 p{
+    color: tomato;
+
+}
+#task_reason2{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    width: 12rem;
+    padding:1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    overflow: scroll;
+}
+#task_reason2 p{
+    color: tomato;
+
+}
+#task_reason3{
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    width: 12rem;
+    padding:1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    overflow: scroll;
+}
+#task_reason3 p{
+    color: tomato;
+
+}
+#task_want{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    width: 13rem;
+    padding:1rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    z-index: 1;
+    overflow: scroll;
+
+}
+#task_want p{
+    color: tomato;
+}
+.walk_wrap{
+    height: 100%;
+    width: 100%;
+}
+#walk_image{
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+}
+#walk_image img{
+    width: 40%;
+    height: 40%;
+    transform: scale(-1,1);
+}
+.task_complete{
+    width: 16rem;
+    border: 2px solid tomato;
+    height: 15rem;
+    overflow: scroll;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
+.task_complete h3{
+    color: tomato;
+}
+.compChild{
+    margin: 0 auto;
+    border: 1px solid gray;
+    width: 70%;
+}
+
+/* 右側のスタイル */
+#right_contents{
+    background-color: tomato;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+#right_contents h3{
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.rightTask{
+    background-color: white;
+    width: 80%;
+    height: 85%;
+    margin: 0 auto;
+    overflow: scroll;
+}
+.right-task-regi{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+    position: relative;
+    
+}
+.date{
+    height: 3rem;
+}
+.date1{
+    border: none;
+   font-size: 0.8rem;
+
+}
+#task{
+    width: 70%;
+    height: 3rem;
+}
+#button1{
+    color: white;
+    position: absolute;
+    height: 2.5rem;
+    width: 3rem;
+    top: 1.25rem;
+    right: 0.8rem;
+    background-color: tomato;
+    border: none;
+    border-radius: 10%;
+
+}
+
+.taskChild{
+    margin: 0 auto;
+    border: 0.5px solid gray;
+    width: 70%;
+    background-color: white;
+    text-align: left;
+    padding-left: 1rem;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    overflow: scroll;
+    
+}
+.upddel{
+    position: absolute;
+    /* width: 5rem;
+    height: 100%; */
+    right: 1rem;
+}
+
+.taskval{
+    padding-left: 2rem;
+}
+.taskCon{
+    width: 15rem;
+    height: 100%;
+    overflow: scroll;
+}
+.parent{
+    background-color: white;
+    margin-top: 1rem;
+   
+}
+.dead{
+    padding-left: 1rem;
+}
+.fail{
+    background-color: red;
+}
+
+.del{
+    color:blue;
+    text-align: right;
+
+}
+.upd{
+    color: blue;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.active{
+   text-decoration: line-through;
+}
+.absolute{
+   text-decoration: none;
+}
+
+/* チャット画面のスタイル */
+#chat_parent{
+    height: 720px;
+    width: 100%;
+}
+.chat_wrap{
+    /* position: relative;
+    width: 100%;
+    height: 130px; */
+}
+.chat_form{
+    height: 3rem;
+    width: 100%;
+    margin-top: 2rem;
+
+    
+    text-align: center;
+    margin-bottom: 1px;
+    position: absolute;
+    bottom: -11rem;
+    left: 1;
+    right: 1;
+    /* position: relative; */
+}
+#chat_content{
+    width: 99%;
+    height: 100%;
+    font-size: 1.4rem;
+}
+#chatButton{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.5rem;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+}
+#chatButton span{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.chat_parent{
+    margin-top: 2rem;
+    height: 300px;
+    width: 80%;
+    overflow: scroll;
+}
+.chat_parent div{
+    /* width: 50%; */
+
+}
+
+.chatChild{
+    margin: 0 auto;
+    margin-right: 13rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(154, 153, 153);
+    border-radius: 5px;
+    width: fit-content;
+    background-color: tomato;
+    color: white;
+    padding: 0.5rem;
+}
+
+.user_id0{
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-left: 13rem;
+}
+/* adminchatのスタイル */
+.chatChildAdmin{
+    margin: 0 auto;
+    margin-left: 13rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    border: 1px solid rgb(154, 153, 153);
+    border-radius: 5px;
+    width: fit-content;
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+}
+#user0{
+    text-align: center;
+    background-color: tomato;
+    color: white;
+    margin-left: 65rem;
+}
+
+/* adminページのスタイル */
+.admin_title{
+    text-align: center;
+    margin: 0 auto;
+}
+.admin_parent{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    height: 20rem;
+
+}
+.admin_parent th{
+    width: 25%;
+
+}
+.admin_parent,th,tr,td{
+    border: 1px solid black;
+}
+.space{
+    width: 100%;
+    height: 1rem;
+}
+.adminChatArrow{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.admin_del{
+    color: red;
+}
+
+/* MyGoalページ */
+.mygoal_span{
+    font-size: 2rem;
+    padding-top: 0.1rem;
+}
+
+/* Step1スタイル */
+#step1h1{
+    margin-bottom: 2rem;
+}
+#step1P{
+    color: rgba(128, 128, 128, 0.704);
+    padding-bottom: 1rem;
+}
+#step1text{
+    height: 5rem;
+    width: 30rem;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+#step1submit{
+    position: relative;
+    top: 0.4rem;
+    right: 5rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+.step1_img{
+    text-align: center;
+    padding-top: 17rem;
+
+}
+.step1_img img{
+    width: 40%;
+    height: 40%;
+}
+.stepSpan{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    top: 3rem;
+    left: 30rem;
+}
+
+/* Step2のスタイル */
+.stepSpan2{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    top: 3.5rem;
+    left: 50rem;
+}
+
+#step2type{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+.step2goal{
+    text-align: left;
+    font-size: 1.3rem;
+    color: rgba(128, 128, 128, 0.9);
+}
+#step2text{
+
+}
+#step2h1{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.step2P{
+    position: relative;
+    z-index: 3;
+    color: rgba(128, 128, 128, 0.9);
+    text-align: left;
+}
+#reason{
+    margin-top: 2rem;
+    position: relative;
+    z-index: 3;
+    width: 45rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+#reason::placeholder{
+    color:  rgba(128, 128, 128, 0.4);
+}
+#step2Btn{
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 2.8rem;
+    width: 2.8rem;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 3rem;
+    left: 21.2rem;
+    z-index: 4;
+}
+.disabled{
+    background-color: gray;
+}
+
+.step2_img{
+    position: absolute;
+    z-index: 2;
+    top: 23rem;
+    left: 0rem;
+}
+.step2_img img{
+    transform: scale(-1,1);
+    width: 40%;
+    height: 40%;
+}
+#step2submit{
+    position: relative;
+    font-size: 1.3rem;
+    z-index: 5;
+}
+#step2submit:hover{
+    cursor: pointer;
+}
+
+
+/* Step3スタイル */
+.step3{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+}
+.step3 h1{
+    text-align: center;
+}
+.stepSpan3{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    top: 3.5rem;
+    left: 50rem;
+}
+.step3P{
+    position: relative;
+    z-index: 3;
+    color: rgba(128, 128, 128, 0.9);
+    text-align: left;
+    line-height: 0.5rem;
+
+}
+.step3sub{
+    padding-top: 2rem;
+}
+#want{
+    margin-top: 2rem;
+    position: relative;
+    z-index: 3;
+    width: 44rem;
+    height: 15rem;
+    font-size: 1.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 10px;
+}
+#want::placeholder{
+    color:  rgba(128, 128, 128, 0.4);
+}
+#wantSubmit{
+    margin-top: 1rem ;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+.step3_img{
+    position: absolute;
+    /* z-index: 2;
+    bottom: 15rem ;
+    left: 45rem; */
+}
+.step3_img img{
+    width: 100%;
+    height: 100%;
+}
+.step3_img_wrap{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    bottom: 20rem ;
+    left: 45rem; 
+    overflow: hidden;
+}
+
+/* FinGoalスタイル */
+
+.finh1{
+    margin-bottom: 4rem;
+}
+.type_text1{
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+.finP{
+    position: relative;
+    z-index: 3;
+    color: rgba(128, 128, 128, 0.9);
+    text-align: center;
+    line-height: 0.5rem;
+}
+#finP2{
+    margin-top: 4rem;
+}
+.finP2{
+    color: rgba(128, 128, 128, 0.9);
+    line-height: 0.5rem;
+
+}
+.stepSpanFin{
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+    top: 3.5rem;
+    left: 30rem;
+}
+.finBtn{
+    margin-top: 7.5rem;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 20rem;
+    height: 4rem;
+    font-size: 1.4rem;
+}
+.fin_img{
+    position: relative;
+    top: 10rem;
+    left: 60rem;
+    
+}
+.fin_img img{
+    width: 25%;
+    height: 25%;
+}
+.img_wrap{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+
+/* サインアウト画面のスタイル */
+.outh1{
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+    text-align: center;
+}
+.signoutBtn{
+    text-align: center;
+}
+.outBtn1{
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+}
+.outBtn1:hover{
+    cursor: pointer;
+}
+
+/* adminCompCheckのスタイル */
+.admin_task_complete{
+    text-align: left;
+}
+.admin_task_complete h1{
+    text-align: center;
+}
+.adChi{
+    border: 1px solid gray;
+    margin: 0 auto;
+    width: 30%;
+}
+.admin_compChild{
+    
+}
+.admin_compChild_span{
+    margin-right: 3rem;
+    margin-left: 1rem;
+
+}
